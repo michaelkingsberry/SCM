@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Epic</title>
+<link href='http://fonts.googleapis.com/css?family=Oswald&amp;v2' rel='stylesheet' type='text/css'></link>
+<link href="http://fonts.googleapis.com/css?family=Arimo:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"></link>
+<style type="text/css">@import url("css/reset.css");</style>
+<style type="text/css">@import url("css/grid.css");</style>
+<style type="text/css">@import url("css/styles.css");</style>
+<style type="text/css">@import url("css/galleria.classic.css");</style>
+<style type="text/css">@import url("css/coda-slider-2.0.css");</style>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--Sliding Boxes-->
+		<style type="text/css">@import url("css/sliding_boxes.css");</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+				//Vertical Sliding
+				$('.boxgrid.slidedown').hover(function(){
+					$(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:600});
+				});
+				//Horizontal Sliding
+				$('.boxgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'325px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:600});
+				});
+				//Diagnal Sliding
+				$('.boxgrid.thecombo').hover(function(){
+					$(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:600});
+				});
+				//Partial Sliding (Only show some of background)
+				$('.boxgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({top:'90px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:600});
+				});
+				//Full Caption Sliding (Hidden to Visible)
+				$('.boxgrid.captionfull').hover(function(){
+					$(".cover", this).stop().animate({top:'120px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'200px'},{queue:false,duration:300});
+				});
+				//Caption Sliding (Partially Hidden to Visible)
+				$('.boxgrid.caption').hover(function(){
+					$(".cover", this).stop().animate({top:'120px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:300});
+				});
+				//Small Horizontal Sliding
+				$('.boxsmgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'70px'},{queue:false,duration:400});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:500});
+				});
+				//Small Partial Sliding (Only show some of background)
+				$('.boxsmgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({left:'70px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:300});
+				});				
+			});
+		</script>
+<style type="text/css">@import url("css/nivo-slider.css");</style>
+<style type="text/css">@import url("css/prettyPhoto.css");</style>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type='text/javascript' language='Javascript' src='js/jquery.quicksand.js'></script>
+<!--Coda Slider-->
+<link rel="stylesheet" href="css/coda-slider-2.0.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.coda-slider-2.0.js"></script>
+		 <script type="text/javascript">
+			$(document).ready(function() {
+				$('#coda-slider-1').codaSlider();
+			});
+		 </script>
+<!--Quotes-->
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#testimonials .slide');
+	setInterval(function(){
+		$('#testimonials .slide').filter(':visible').fadeOut(2000,function(){
+			if($(this).next().size()){
+				$(this).next().fadeIn(1000);
+			}
+			else{
+				$('#testimonials .slide').eq(0).fadeIn(1000);
+			}
+		});
+	},6000);	
+});	
+</script>
+<!--New Menu-->
+<link rel="stylesheet" type="text/css" media="screen" href="css/menu.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body>
+
+
+
+<!--Main Bar-->
+<div class="navbar">
+<div class="container_12">
+	<!--Logo-->
+	<div class="grid_2 logo"><a href="index.html"><img src="images/logo_blank.png" alt=""/></a></div>
+	<!--End Logo-->
+	<!--Main Nav--> 
+	<div class="grid_10">  
+
+			<div id="menu">
+				<ul>
+					<li class="current"><a href="index.html">Home</a>
+						<ul>
+							<li><a href="index.html">Default</a></li>
+                            <li><a href="index_2.html">Alternate Slider</a></li>
+                            <li><a href="index_3.html">Alternate Layout</a></li>
+                            <li><a href="index_5.html">With Gallery</a></li>
+                            <li><a href="index_6.html">With Blog</a></li>
+                            <li><a href="index_4.html">Video</a></li>
+                            <li><a href="index_7.html">Bonus Slider</a></li>
+							<li><a href="index_8.html">Infiniti Gallery</a></li>
+						</ul>
+					</li>
+                    <li><a href="about.html">About</a>
+						<ul>
+                            <li><a href="#">Example</a></li>
+							<li><a href="#">Three</a></li>                            
+							<li><a href="#">Tier</a></li>
+                            <li class="icon"><a href="#">Menu</a>
+                          		<ul>
+									<li><a href="#">Example</a></li>
+                                    <li><a href="#">Third</a></li>
+									<li><a href="#">Tier</a></li>
+                                    <li><a href="#">Menu</a></li>
+								</ul>                              
+                            </li>
+						</ul>
+					</li>
+                    <li><a href="services.html">Services</a>
+						<ul>
+                            <li><a href="services.html">Services</a></li>
+							<li><a href="typography.html">Typography</a></li>
+							<li><a href="styles.html">Elements</a></li>
+                            <li><a href="widgets.html">Widgets</a></li>
+                            <li><a href="textlayouts.html">Column Layout</a></li>
+                            <li class="icon"><a href="sidebar1.html">Sidebars</a>
+                            	<ul>
+									<li><a href="sidebar1.html">Sidebar Right</a></li>
+									<li><a href="sidebar2.html">Sidebar Left</a></li>
+								</ul>                            
+                            </li>
+                            <li><a href="column1.html">Fullwidth Page</a></li>
+						</ul>
+					</li>
+					<li><a href="gallery8.html">Portfolio</a>
+						<ul>
+                          <li><a href="gallery1.html">Column Two</a></li>
+							<li><a href="gallery2.html">Column Three</a></li>
+							<li><a href="gallery3.html">Column Four</a></li>
+                            <li><a href="gallery4.html">Traditional Col Two</a></li>
+                            <li><a href="gallery5.html">Traditional Col Three</a></li>
+                            <li><a href="gallery7.html">Sortable Col Two</a></li>
+                            <li><a href="gallery8.html">Sortable Col Three</a></li>                              
+                            <li><a href="gallery6.html">Galleria</a></li>
+						</ul>                    
+                    </li>
+					<li><a href="blog.html">Blog</a>
+						<ul>
+                            <li><a href="blog.html">Blog Page</a></li>
+							<li><a href="post1.html">Single Post One</a></li>
+							<li><a href="post2.html">Single Post Two</a></li>
+						</ul> 
+                    </li>                    
+                    <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>  
+
+	</div>
+    <!--End Main Nav--> 
+</div>
+</div>
+<!--End Main Bar-->
+
+<div class="clearnospacing"></div>    
+    
+<!--Video Section-->
+<div class="backgroundgradient4">
+	<div class="container_12">
+
+<div class="coda-slider-wrapper">
+	<div class="coda-slider preload" id="coda-slider-1">
+    
+		<div class="panel">
+			<div class="panel-wrapper">
+        		<div class="grid_7 alpha">
+        			<div class="shadow510x290">
+        			<iframe src="http://player.vimeo.com/video/9953368?title=0&amp; byline=0&amp; portrait=0&amp; autoplay=0&amp; color=00adef" width="520" height="290" frameborder="0" class="video"></iframe>
+        			</div>
+        		</div>
+                <div class="grid_4 codabox omega">
+  				<h3>OUR REEL</h3>
+    			<p>Our new SelectCut Media Reel is now available for viewing.  Please feel free to contact us if you are interested in having us produce your next multimedia project.</p>               
+        		        		<a href="#" class="button highlight small">View our Portfolio</a>
+                </div>
+			</div>
+		</div>    
+    
+
+	</div><!-- .coda-slider -->
+</div><!-- .coda-slider-wrapper -->
+
+	</div>
+</div>
+<!--End Video Section-->
+
+
+
+
+
+<!--Page Content-->
+     
+                        
+
+
+<!--End Page Content-->
+
+<div class="footer"></div>
+
+
+<!--Copyright Section-->
+<div class="bottombar">
+    <div class="container_12">
+    
+        <div class="grid_4">
+       	<div class="copyright">&copy; SelectCut Media. All Rights Reserved.</div>
+            <div class="clearnospacing"></div>
+            <div class="subtext"><a href="http://themeforest.net/user/ignitethemes"></a></div>
+        </div>
+        
+        <div class="grid_8">
+        <div class="alignright">
+            <div class="crumb_navigation">
+            	<ul>
+		    		<li><a href="index.html">Home</a></li>
+		    		<li><a href="about.html">About</a></li>
+		   			<li><a href="services.html">Services</a></li>
+                 	<li><a href="gallery1.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+			</div>
+        </div>
+        </div>
+        
+    </div>
+    
+</div>
+<!--END Copyright Section-->
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+<!--Tool Tip-->
+<script type="text/javascript">
+$(document).ready(function() {
+    //Tooltips
+    $(".tip_trigger").hover(function(){
+        tip = $(this).find('.tip');
+        tip.show(); //Show tooltip
+    }, function() {
+        tip.hide(); //Hide tooltip
+    }).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coodrinates
+        var mousey = e.pageY + 20; //Get Y coordinates
+        var tipWidth = tip.width(); //Find width of tooltip
+        var tipHeight = tip.height(); //Find height of tooltip
+
+        //Distance of element from the right edge of viewport
+        var tipVisX = $(window).width() - (mousex + tipWidth);
+        //Distance of element from the bottom of viewport
+        var tipVisY = $(window).height() - (mousey + tipHeight);
+
+        //Absolute position the tooltip according to mouse position
+        tip.css({  top: mousey, left: mousex });
+    });
+});
+</script>
+
+<!--Go To Top-->
+<script type='text/javascript'>
+    $(function() {
+        $.fn.scrollToTop = function() {
+            $(this).hide().removeAttr("href");
+            if ($(window).scrollTop() != "0") {
+                $(this).fadeIn("slow")
+            }
+            var scrollDiv = $(this); 
+            $(window).scroll(function() {
+                if ($(window).scrollTop() == "0") {
+                    $(scrollDiv).fadeOut("slow")
+                } else {
+                    $(scrollDiv).fadeIn("slow")
+                }
+            });
+            $(this).click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, "slow")
+            })
+        }
+    });
+    $(function() {
+        $("#w2b-StoTop").scrollToTop();
+    });
+</script>
+    
+</body></html>

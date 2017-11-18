@@ -1,0 +1,898 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Epic</title>
+<link href='http://fonts.googleapis.com/css?family=Oswald&amp;v2' rel='stylesheet' type='text/css'></link>
+<link href="http://fonts.googleapis.com/css?family=Arimo:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"></link>
+<style type="text/css">@import url("css/reset.css");</style>
+<style type="text/css">@import url("css/grid.css");</style>
+<style type="text/css">@import url("css/styles.css");</style>
+<style type="text/css">@import url("css/tabs.css");</style>
+<style type="text/css">@import url("css/coda-slider-2.0.css");</style>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--Sliding Boxes-->
+		<style type="text/css">@import url("css/sliding_boxes.css");</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+				//Vertical Sliding
+				$('.boxgrid.slidedown').hover(function(){
+					$(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:600});
+				});
+								$('.boxgrid300.slidedown').hover(function(){
+					$(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:500});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:500});
+				});
+				//Horizontal Sliding
+				$('.boxgrid300.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'325px'},{queue:false,duration:500});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:500});
+				});
+				//Diagnal Sliding
+				$('.boxgrid300.thecombo').hover(function(){
+					$(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,duration:500});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:500});
+				});
+				//Partial Sliding (Only show some of background)
+				$('.boxgrid300.peek').hover(function(){
+					$(".cover", this).stop().animate({top:'90px'},{queue:false,duration:500});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:500});
+				});
+				//Full Caption Sliding (Hidden to Visible)
+				$('.boxgrid300.captionfull').hover(function(){
+					$(".cover", this).stop().animate({top:'120px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'200px'},{queue:false,duration:300});
+				});
+				//Caption Sliding (Partially Hidden to Visible)
+				$('.boxgrid300.caption').hover(function(){
+					$(".cover", this).stop().animate({top:'120px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:300});
+				});
+				//Horizontal Sliding
+				$('.boxgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'325px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:600});
+				});
+				//Diagnal Sliding
+				$('.boxgrid.thecombo').hover(function(){
+					$(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:600});
+				});
+				//Partial Sliding (Only show some of background)
+				$('.boxgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({top:'90px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:600});
+				});
+				//Full Caption Sliding (Hidden to Visible)
+				$('.boxgrid.captionfull').hover(function(){
+					$(".cover", this).stop().animate({top:'120px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'200px'},{queue:false,duration:300});
+				});
+				//Caption Sliding (Partially Hidden to Visible)
+				$('.boxgrid.caption').hover(function(){
+					$(".cover", this).stop().animate({top:'120px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:300});
+				});
+				//Small Horizontal Sliding
+				$('.boxsmgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'70px'},{queue:false,duration:400});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:500});
+				});
+				//Small Partial Sliding (Only show some of background)
+				$('.boxsmgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({left:'70px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:300});
+				});				
+			});
+		</script>
+<style type="text/css">@import url("css/nivo-slider.css");</style>
+<style type="text/css">@import url("css/prettyPhoto.css");</style>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type='text/javascript' language='Javascript' src='js/jquery.quicksand.js'></script>
+<!--Coda Slider-->
+<link rel="stylesheet" href="css/coda-slider-2.0.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.coda-slider-2.0.js"></script>
+		 <script type="text/javascript">
+			$(document).ready(function() {
+				$('#coda-slider-1').codaSlider();
+			});
+		 </script>
+<!--New Menu-->
+<link rel="stylesheet" type="text/css" media="screen" href="css/menu.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body>
+
+<!--Top Nav-->
+<div class="bar">
+	<div class="container_12">
+    
+		<div class="grid_6">
+			<div class="mininav">
+				<a href="#">Sign up</a>&nbsp;&nbsp;<a href="#">Login</a>&nbsp;&nbsp;<a href="mailto:info@epicdesigns.com">info@epicdesigns.com</a>
+			</div>
+		</div>
+        
+        <div class="grid_6 alignright">
+        <!--Social Networks-->
+        <div class="socialbar">
+            <a href="#" class="tip_trigger"><img src="images/icons/facebook.png" class="social" alt="Facebook"/><span class="tip">Facebook</span></a> 
+        	<a href="#" class="tip_trigger"><img src="images/icons/twitter.png" class="social" alt="Twitter"/><span class="tip">Twitter</span></a> 
+        	<a href="#" class="tip_trigger"><img src="images/icons/vimeo.png" class="social" alt="Vimeo"/><span class="tip">Vimeo</span></a>
+            <a href="#" class="tip_trigger"><img src="images/icons/myspace.png" class="social" alt="Myspace"/><span class="tip">Myspace</span></a> 
+        	<a href="#" class="tip_trigger"><img src="images/icons/rss.png" class="social" alt="RSS"/><span class="tip">RSS</span></a> 
+        	<a href="#" class="tip_trigger"><img src="images/icons/skype.png" class="social" alt="Skype"/><span class="tip">Skype</span></a>
+        	<a href="#" class="tip_trigger"><img src="images/icons/flickr.png" class="social" alt="Flickr"/><span class="tip">Flickr</span></a>            
+        </div>
+        <!--End Social Networks-->        
+        </div>
+        
+	</div>
+</div>
+<!--End Top Nav-->
+
+<!--Main Bar-->
+<div class="navbar">
+<div class="container_12">
+	<!--Logo-->
+	<div class="grid_2 logo"><a href="index.html"><img src="images/logo_blank.png" alt=""/></a></div>
+	<!--End Logo-->
+	<!--Main Nav--> 
+	<div class="grid_10">  
+
+			<div id="menu">
+				<ul>
+					<li class="current"><a href="index.html">Home</a>
+						<ul>
+							<li><a href="index.html">Default</a></li>
+                            <li><a href="index_2.html">Alternate Slider</a></li>
+                            <li><a href="index_3.html">Alternate Layout</a></li>
+                            <li><a href="index_5.html">With Gallery</a></li>
+                            <li><a href="index_6.html">With Blog</a></li>
+                            <li><a href="index_4.html">Video</a></li>
+                            <li><a href="index_7.html">Bonus Slider</a></li>
+							<li><a href="index_8.html">Infiniti Gallery</a></li>
+						</ul>
+					</li>
+                    <li><a href="about.html">About</a>
+						<ul>
+                            <li><a href="#">Example</a></li>
+							<li><a href="#">Three</a></li>                            
+							<li><a href="#">Tier</a></li>
+                            <li class="icon"><a href="#">Menu</a>
+                          		<ul>
+									<li><a href="#">Example</a></li>
+                                    <li><a href="#">Third</a></li>
+									<li><a href="#">Tier</a></li>
+                                    <li><a href="#">Menu</a></li>
+								</ul>                              
+                            </li>
+						</ul>
+					</li>
+                    <li><a href="services.html">Features</a>
+						<ul>
+                            <li><a href="services.html">Services</a></li>
+							<li><a href="typography.html">Typography</a></li>
+							<li><a href="styles.html">Elements</a></li>
+                            <li><a href="widgets.html">Widgets</a></li>
+                            <li><a href="textlayouts.html">Column Layout</a></li>
+                            <li class="icon"><a href="sidebar1.html">Sidebars</a>
+                            	<ul>
+									<li><a href="sidebar1.html">Sidebar Right</a></li>
+									<li><a href="sidebar2.html">Sidebar Left</a></li>
+								</ul>                            
+                            </li>
+                            <li><a href="column1.html">Fullwidth Page</a></li>
+						</ul>
+					</li>
+					<li><a href="gallery1.html">Portfolio</a>
+						<ul>
+                            <li><a href="gallery1.html">Column Two</a></li>
+							<li><a href="gallery2.html">Column Three</a></li>
+							<li><a href="gallery3.html">Column Four</a></li>
+                            <li><a href="gallery4.html">Traditional Col Two</a></li>
+                            <li><a href="gallery5.html">Traditional Col Three</a></li>
+                            <li><a href="gallery7.html">Sortable Col Two</a></li>
+                            <li><a href="gallery8.html">Sortable Col Three</a></li>                              
+                            <li><a href="gallery6.html">Galleria</a></li>
+						</ul>                    
+                    </li>
+					<li><a href="blog.html">Blog</a>
+						<ul>
+                            <li><a href="blog.html">Blog Page</a></li>
+							<li><a href="post1.html">Single Post One</a></li>
+							<li><a href="post2.html">Single Post Two</a></li>
+						</ul> 
+                    </li>                    
+                    <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>  
+
+	</div>
+    <!--End Main Nav--> 
+</div>
+</div>
+<!--End Main Bar-->
+
+<div class="clearnospacing"></div>    
+    
+<!--Video Section-->
+<div class="backgroundgradient4">
+	<div class="container_12">
+
+<div class="coda-slider-wrapper">
+	<div class="coda-slider preload" id="coda-slider-1">
+    
+		<div class="panel">
+			<div class="panel-wrapper">
+
+        <div class="grid_12">        
+        	<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image39.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="images/boxes/image31.jpg" title="Image Description" rel="prettyPhoto[1]">Lightbox</a></span>	
+			</div>
+            </div>
+			
+            <div class="shadow200">
+			<div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image2.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="images/boxes/image53.jpg" title="Image Description" rel="prettyPhoto[1]">Lightbox</a></span>
+			</div>
+            </div>
+				
+			<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image40.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="images/boxes/image34.jpg" title="Image Description" rel="prettyPhoto[1]">Lightbox</a></span>
+			</div>
+            </div>
+            
+			<div class="shadow200">
+            <div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image4.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="images/boxes/image54.jpg" title="Image Description" rel="prettyPhoto[1]">Lightbox</a></span>
+			</div>
+            </div>
+			
+			<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image5.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="images/boxes/image55.jpg" title="Image Description" rel="prettyPhoto[1]">Lightbox</a></span>
+			</div>
+            </div>
+
+        	<div class="shadow200">
+            <div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image41.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="images/boxes/image37.jpg" title="Image Description" rel="prettyPhoto[1]">Lightbox</a></span>		
+			</div>
+            </div>
+			
+			<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image7.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="images/boxes/image56.jpg" title="Image Description" rel="prettyPhoto[1]">Lightbox</a></span>	
+			</div>
+            </div>
+            
+			<div class="shadow200">
+            <div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image42.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="images/boxes/image32.jpg" title="Image Description" rel="prettyPhoto[1]">Lightbox</a></span>	
+			</div>
+            </div>           
+        </div>
+
+			</div>
+		</div>    
+    
+		<div class="panel">
+			<div class="panel-wrapper">
+
+        <div class="grid_12"> 
+			<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image40.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="http://vimeo.com/24561491?width=800&amp;height=450" title="Video Description" rel="prettyPhoto[2]">Vimeo Video</a></span>
+			</div>
+            </div>
+                           
+        	<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image6.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="http://vimeo.com/21673567?width=800&amp;height=450" title="Video Description" rel="prettyPhoto[2]">Vimeo Video</a></span>	
+			</div>
+            </div>
+			
+            <div class="shadow200">
+			<div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image3.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="http://vimeo.com/24561491?width=800&amp;height=450" title="Video Description" rel="prettyPhoto[2]">Vimeo Video</a></span>
+			</div>
+            </div>
+            
+			<div class="shadow200">
+            <div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image4.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="http://vimeo.com/21673567?width=800&amp;height=450" title="Video Description" rel="prettyPhoto[2]">Vimeo Video</a></span>
+			</div>
+            </div>
+			
+			<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image5.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="http://vimeo.com/24561491?width=800&amp;height=450" title="Video Description" rel="prettyPhoto[2]">Vimeo Video</a></span>
+			</div>
+            </div>
+
+        	<div class="shadow200">
+            <div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image57.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="http://vimeo.com/21673567?width=800&amp;height=450" title="Video Description" rel="prettyPhoto[2]">Vimeo Video</a></span>	
+			</div>
+            </div>
+			
+			<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image8.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="http://vimeo.com/24561491?width=800&amp;height=450" title="Video Description" rel="prettyPhoto[2]">Vimeo Video</a></span>	
+			</div>
+            </div>
+            
+			<div class="shadow200">
+            <div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image1.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="http://vimeo.com/21673567?width=800&amp;height=450" title="Video Description" rel="prettyPhoto[2]">Vimeo Video</a></span>
+			</div>
+            </div>           
+        </div>
+
+			</div>
+		</div>
+        
+		<div class="panel">
+			<div class="panel-wrapper">
+
+        <div class="grid_12">        
+        	<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image39.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="details.html" target="_self">View Project</a></span>		
+			</div>
+            </div>
+			
+            <div class="shadow200">
+			<div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image2.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="#" target="_self">View Website</a></span>
+			</div>
+            </div>
+				
+			<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image40.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="details.html" target="_self">View Project</a></span>
+			</div>
+            </div>
+            
+			<div class="shadow200">
+            <div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image4.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="details.html" target="_self">Read More</a></span>
+			</div>
+            </div>
+			
+			<div class="shadow200">
+            <div class="boxgrid slideright">
+				<img class="cover" src="images/boxes/image5.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="details.html" target="_self">View Project</a></span>	
+			</div>
+            </div>
+
+        	<div class="shadow200">
+            <div class="boxgrid slidedown">
+				<img class="cover" src="images/boxes/image41.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span><a href="#" target="_self">View Website</a></span>		
+			</div>
+            </div>          
+        </div>
+
+			</div>
+		</div>
+
+	</div><!-- .coda-slider -->
+</div><!-- .coda-slider-wrapper -->
+
+	</div>
+</div>
+<!--End Slider Section-->
+
+<div class="clearnospacing"></div>
+
+<!--Page Callout Section-->
+		<div class="smallbar"></div>
+    	<div class="calloutcontainer">
+        	<div class="container_12">
+            	<div class="grid_12">
+                
+                <div class="alignright">	
+                    <div class="calloutbutton"><a href="#" class="button highlight medium">Learn More</a></div>
+        		</div>
+  				<div class="callouttext"><font color="#5fa3d2">EPIC</font> IS THE PERFECT TEMPLATE FOR <font color="#5fa3d2">SHOWCASING</font> YOUR WORK</div>
+                <p>Lorem ipsum amet libero et est fermentum suscipit sed id nulla. Donec elementum placerat tortor, in facilisis ipsum pharetra laoreet.<br />
+                Vivamus ut feugiat dui. Sed dictum justo in odio bibendum pellentesque accumsan odio gravida. Malesuada libero sapien nec felis.<br /></p>
+
+           	 	</div>
+        	</div>
+    	</div>
+<!--End Page Callout Section-->
+
+<!--Page Content-->
+<div class="pagecontents">
+	<div class="container_12">         
+        
+        <!--Start Main Contents-->
+    	<div class="grid_9">
+        
+    	<div class="aligncenter"><h3>VALID XHTML 1.0 TEMPLATE</h3></div>
+    	<p>Lorem ipsum dolor <span style="background-color:black">sit amet consectetur</span> adipiscing elit. Proin vel lectus ut mauris convallis at lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscipit et aliquetre magna fringilla. Nullam a purus ut justo consec imperdiet. Sed lacinia, dui quis interdumk tempus, lacus elit faucibus nisi ut porta justo arcu quis justo sit amet antes.</p>
+        
+     <div class="clearnospacing"></div>   
+     <div class="divider"></div>          
+        
+        <div class="grid_4">
+   		<h3><img class="imageinset" src="images/basic_icons/monitor_32.png" alt=""/>WEB DESIGN</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisscing elit. Proin vel lectus ut mauris convallis lacinia dapibu sit amet neque. Praesent scelerisque tellus sit ameti.</p>
+        <h5><a href="#" target="_self">Read More &rarr;</a></h5>
+        </div>
+        
+        <div class="grid_4">
+   		<h3><img class="imageinset" src="images/basic_icons/document_32.png" alt=""/>GRAPHIC DESIGN</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisscing elit. Proin vel lectus ut mauris convallis lacinia dapibu sit amet neque. Praesent scelerisque tellus sit ameti.</p>
+        <h5><a href="#" target="_self">Read More &rarr;</a></h5>
+        </div>
+        
+        <div class="clearsmall"></div>
+        
+        <div class="grid_4">
+   		<h3><img class="imageinset" src="images/basic_icons/gear_32.png" alt=""/>WEB DEVELOPMENT</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisscing elit. Proin vel lectus ut mauris convallis lacinia dapibu sit amet neque. Praesent scelerisque tellus sit ameti.</p>
+        <h5><a href="#" target="_self">Read More &rarr;</a></h5>
+        </div>        
+        
+        <div class="grid_4">
+   		<h3><img class="imageinset" src="images/basic_icons/pencil_32.png" alt=""/>BRANDING</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisscing elit. Proin vel lectus ut mauris convallis lacinia dapibu sit amet neque. Praesent scelerisque tellus sit ameti.</p>
+        <h5><a href="#" target="_self">Read More &rarr;</a></h5>
+        </div>
+        
+        <div class="clearsmall"></div>
+        
+        <div class="grid_4">
+   		<h3><img class="imageinset" src="images/basic_icons/help_32.png" alt=""/>FULL SUPPORT</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisscing elit. Proin vel lectus ut mauris convallis lacinia dapibu sit amet neque. Praesent scelerisque tellus sit ameti.</p>
+        <h5><a href="#" target="_self">Read More &rarr;</a></h5>
+        </div>
+        
+        <div class="grid_4">
+   		<h3><img class="imageinset" src="images/basic_icons/statistics_32.png" alt=""/>ANALYTICS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisscing elit. Proin vel lectus ut mauris convallis lacinia dapibu sit amet neque. Praesent scelerisque tellus sit ameti.</p>
+        <h5><a href="#" target="_self">Read More &rarr;</a></h5>
+        </div>
+        
+     <div class="clearnospacing"></div>   
+     <div class="divider"></div>  
+        
+        	<h3>RECENT WORK</h3>
+            
+            <div class="shadow300">
+            <div class="boxgrid300 slideright">
+				<img class="cover" src="images/boxes/image51.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices euismod fringilla donec consequat.</p>
+                    <span><a href="details.html" target="_self">View Project</a></span>	
+			</div>
+            </div>
+			
+			<div class="shadow300">
+            <div class="boxgrid300 slidedown">
+				<img class="cover" src="images/boxes/image52.jpg" alt=""/>
+					<h3>Project Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices euismod fringilla donec consequat.</p>
+                    <span><a href="#" target="_self">View Website</a></span>
+			</div>
+            </div>
+            <h5><img class="imageinset" src="images/icons/icon2.png" alt=""/><a href="#" target="_self">Portfolio &rarr;</a></h5>                                                                   
+            
+      </div>
+        <!--End Main Contents-->
+                 
+		<!--Start Sidebar--> 
+        <div class="grid_3 sidebarright alignright">
+        
+		<!--Search-->        		
+		<div class="widget">
+			<form method="get" id="searchform" action="#">
+				<fieldset class="search">
+				<input type="text" class="box" value="Search"/>
+				<button class="btn">Search</button>
+				</fieldset>
+			</form>
+		</div>
+            
+        <div class="clearnospacing"></div>          
+        
+        	<div class="grid_3">
+            <h3>Popular Posts</h3>
+            <div class="clearnospacing"></div>
+            <div class="dividerblog"></div>
+            <div class="boxsmgrid peek">
+				<a href="#" target="_self"><img src="images/boxes/image25.jpg" alt=""/></a>
+				<a href="#" target="_self"><img class="cover" src="images/boxes/image49.jpg" alt=""/></a>			
+			</div> 
+        	<p>Lorem ipsum dolor sit eu amet consec atu et cons adipisscing elita.</p>
+            <div class="clearnospacing"></div>
+            <h6><img src="images/icons/blog/dark/calendar.gif" alt=""/><a href="#" target="_self">June 21st, 2011</a><span><img src="images/icons/blog/dark/comments.gif" alt=""/><a href="#" target="_self">5 Comments</a></span></h6>
+        	</div>
+            
+            <div class="clearnospacing"></div>
+            <div class="dividerblog"></div>
+            <div class="clearnospacing"></div>
+            
+        	<div class="grid_3">
+            <div class="boxsmgrid peek">
+				<a href="#" target="_self"><img src="images/boxes/image25.jpg" alt=""/></a>
+				<a href="#" target="_self"><img class="cover" src="images/boxes/image50.jpg" alt=""/></a>			
+			</div> 
+        	<p>Lorem ipsum dolor sit eu amet consec atu et cons adipisscing elita.</p>
+            <div class="clearnospacing"></div>
+            <h6><img src="images/icons/blog/dark/calendar.gif" alt=""/><a href="#" target="_self">May 19th, 2011</a><span><img src="images/icons/blog/dark/comments.gif" alt=""/><a href="#" target="_self">3 Comments</a></span></h6>
+            <div class="dividerblog"></div>
+        	</div>
+            
+        <div class="clearsmall"></div>        
+        
+       	<!--Tabs-->        
+		<div id="container">
+			<ul class="menu">
+				<li id="one" class="active">Company</li>
+				<li id="two">Services</li>
+				<li id="three">Clients</li>
+			</ul>
+				<span class="clearnospacing"></span>
+				<div class="content one">
+					<h4>COMPANY</h4>
+					<p>
+				Lorem ipsum dolor sit amet, consectetur <font color="#5fa3d2">adipiscing</font> elit. Maecenas metus nu <font color="#5fa3d2">commodo</font> a sodales sed, dignissim pretium nunc amus ac lacus non toror ul.
+					</p>
+				</div>
+				<div class="content two">
+					<h4>SERVICES</h4>
+					<p>
+						Consectetur <font color="#5fa3d2">adipiscing</font> elit. Maecenas metus nu <font color="#5fa3d2">commodo</font> a sodales sed, dignissim pretium nunc amus ac lacus non toror ul.
+					</p>
+				</div>
+				<div class="content three">
+					<h4>CLIENTS</h4>
+					<p>
+						Maecenas metus nu <font color="#5fa3d2">commodo</font> a sodales sed, dignissim pretium nunc amus ac lacus non toror ul.
+					</p>
+				</div>
+    		</div>
+    		<!--End Tabs-->            
+            
+            <div class="clear"></div>
+            
+             <div class="widget">
+        		<h3>More Blog Posts</h3>
+        		<ul>
+            		<li><a href="#">RDFa 1.1 distiller and validator</a></li>
+            		<li><a href="#">Web Architecture</a></li>
+            		<li><a href="#">Semantic Web? Not Science.</a></li>
+            		<li><a href="#">XML Technology</a></li>
+            		<li><a href="#">Ensuring Accessibility in HTML5</a></li>                   
+        		</ul>
+   			 </div>
+             
+            <div class="clearnospacing"></div>                           
+            
+            <div class="widget">
+        	<h3>Quick Links</h3>
+        		<ul>
+            		<li><a href="index.html">Home</a></li>
+            		<li><a href="about.html">About</a></li>
+            		<li><a href="services.html">Features</a></li>
+            		<li><a href="gallery1.html">Portfolio</a></li>
+            		<li><a href="blog.html">Blog</a></li>
+            		<li><a href="contact.html">Contact</a></li>             
+        		</ul>
+   			</div>           
+                                     
+        </div>
+        <!--End Sidebar-->        
+        
+        <div class="clear"></div> 
+
+	</div>
+</div>
+
+<div class="footer">
+    <div class="container_12">
+    
+    	<div class="grid_12">
+        	<div class="footerlogo">
+        		<img src="images/logo.png" alt=""/>
+        	</div>
+        </div>
+
+     	<div class="grid_6 alpha">                
+    	<h3>OUR COMPANY</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla. Nullam a purus ut justo consectetur imperdiet. Sed lacinia, dui quis interdum tempus, lacus elit faucibus nisi, ut porta justo adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque praesent dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla. Nullam a purus ut justo cons vel lectus ut mauris convallis lacinia.</p>
+        
+        <div class="clear"></div>
+        
+    	<h3>FROM THE BLOG</h3>        
+         
+     	<div class="grid_3 alpha">
+            <div class="boxsmgrid peek">
+				<a href="#" target="_self"><img src="images/boxes/image25.jpg" alt=""/></a>
+				<a href="#" target="_self"><img class="cover" src="images/boxes/image26.jpg" alt=""/></a>			
+			</div>              
+        	<p><a href="#" target="_self">New Site Launch</a><br />Sept 28th, 2011<br />By Admin</p>
+            <div class="clearnospacing"></div>
+            <p>Lorem ipsum dolor sit amet ctetur adi piscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet etis Lorem ipsum dolor sit amet ctetur adi.</p>
+        </div>
+        
+     	<div class="grid_3 omega">
+       		<div class="boxsmgrid peek">
+				<a href="#" target="_self"><img src="images/boxes/image25.jpg" alt=""/></a>
+				<a href="#" target="_self"><img class="cover" src="images/boxes/image27.jpg" alt=""/></a>			
+			</div>      
+        	<p><a href="#" target="_self">One Zero Project</a><br />Oct 19th, 2011<br />By Ignite</p>
+            <div class="clearnospacing"></div>
+            <p>Lorem ipsum dolor sit amet ctetur adi piscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet etis Lorem ipsum dolor sit amet ctetur adi.</p>
+        </div>     
+        
+        <div class="clear"></div>       
+        
+        </div>
+        
+     	<div class="grid_6 omega">                
+    	<h3>LATEST WORK</h3>
+        	<div class="boxsmgrid peek">
+				<a href="#" target="_self"><img src="images/boxes/image25.jpg" alt=""/></a>
+				<a href="#" target="_self"><img class="cover" src="images/boxes/image15.jpg" alt=""/></a>			
+			</div>
+			
+        	<div class="boxsmgrid slideright">
+				<img class="cover" src="images/boxes/image16.jpg" alt=""/>
+				<p>Nike<br /><a href="#" target="_self">Project</a></p>	
+			</div>
+				
+        	<div class="boxsmgrid peek">
+				<a href="#" target="_self"><img src="images/boxes/image25.jpg" alt=""/></a>
+				<a href="#" target="_self"><img class="cover" src="images/boxes/image17.jpg" alt=""/></a>			
+			</div>
+            
+        	<div class="boxsmgrid slideright">
+				<img class="cover" src="images/boxes/image18.jpg" alt=""/>
+				<p>Nextel<br /><a href="#" target="_self">Project</a></p>	
+			</div>
+            
+        	<div class="boxsmgrid peek">
+				<a href="#" target="_self"><img src="images/boxes/image25.jpg" alt=""/></a>
+				<a href="#" target="_self"><img class="cover" src="images/boxes/image19.jpg" alt=""/></a>			
+			</div>
+			
+        	<div class="boxsmgrid slideright">
+				<img class="cover" src="images/boxes/image20.jpg" alt=""/>
+				<p>Nike<br /><a href="#" target="_self">Project</a></p>	
+			</div>
+				
+        	<div class="boxsmgrid peek">
+				<a href="#" target="_self"><img src="images/boxes/image25.jpg" alt=""/></a>
+				<a href="#" target="_self"><img class="cover" src="images/boxes/image21.jpg" alt=""/></a>			
+			</div>
+            
+        	<div class="boxsmgrid slideright">
+				<img class="cover" src="images/boxes/image22.jpg" alt=""/>
+				<p>Nextel<br /><a href="#" target="_self">Project</a></p>	
+			</div>
+            
+        	<div class="boxsmgrid peek">
+				<a href="#" target="_self"><img src="images/boxes/image25.jpg" alt=""/></a>
+				<a href="#" target="_self"><img class="cover" src="images/boxes/image23.jpg" alt=""/></a>			
+			</div>
+			
+        	<div class="boxsmgrid slideright">
+				<img class="cover" src="images/boxes/image24.jpg" alt=""/>
+				<p>Nike<br /><a href="#" target="_self">Project</a></p>	
+			</div>            
+            
+        <div class="clear"></div>
+        
+     	<div class="grid_3 alpha">                
+    		<h3>EPIC</h3>
+        	<p>Lorem ipsum dolor sit amet ctetur adi piscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet etis. Lorem ipsum dolor sit amet ctetur adi piscing elit vel lectus ut mauris sit am convallis lacinia dapibus sit amet etis. Convallis lacinia dapibus sit amet etis. Piscing elit proin vel lectus ut mauris.</p>
+        </div>         
+        
+    	<div class="grid_3 omega"> 
+        	<h3>CONTACT INFO</h3>
+        	<p>16000 Von Karman<br />Suite 700<br />Irvine<br />CA 92612</p>
+        	<p>Phone: (949) 458-2300<br />Fax: (949) 458-4300<br />Email: <a href="mailto:contact@epic.com">contact@epic.com</a></p>
+        </div>               
+                    
+        </div>
+        
+        <div class="grid_12">
+        <div class="socialbar">
+            <a href="#" class="tip_trigger"><img src="images/icons/facebook.png" class="social" alt="Facebook"/><span class="tip">Facebook</span></a> 
+        	<a href="#" class="tip_trigger"><img src="images/icons/twitter.png" class="social" alt="Twitter"/><span class="tip">Twitter</span></a> 
+        	<a href="#" class="tip_trigger"><img src="images/icons/vimeo.png" class="social" alt="Vimeo"/><span class="tip">Vimeo</span></a>
+            <a href="#" class="tip_trigger"><img src="images/icons/myspace.png" class="social" alt="Myspace"/><span class="tip">Myspace</span></a> 
+        	<a href="#" class="tip_trigger"><img src="images/icons/rss.png" class="social" alt="RSS"/><span class="tip">RSS</span></a> 
+        	<a href="#" class="tip_trigger"><img src="images/icons/skype.png" class="social" alt="Skype"/><span class="tip">Skype</span></a>
+        	<a href="#" class="tip_trigger"><img src="images/icons/flickr.png" class="social" alt="Flickr"/><span class="tip">Flickr</span></a>            
+        </div> 
+        </div>
+    <div class="clearfooter"></div>
+    </div>
+</div>
+
+<!--Copyright Section-->
+<div class="bottombar">
+    <div class="container_12">
+    
+        <div class="grid_4">
+        	<div class="copyright">&copy; Epic. All Rights Reserved.</div>
+            <div class="clearnospacing"></div>
+            <div class="subtext">Powered by <a href="http://themeforest.net/user/ignitethemes">Awesome</a></div>
+        </div>
+        
+        <div class="grid_8">
+        <div class="alignright">
+            <div class="crumb_navigation">
+            	<ul>
+		    		<li><a href="index.html">Home</a></li>
+		    		<li><a href="about.html">About</a></li>
+		   			<li><a href="services.html">Features</a></li>
+                 	<li><a href="gallery1.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+			</div>
+        </div>
+        </div>
+        
+    </div>
+    <div class="topbutton"><a href="#" id='w2b-StoTop'>Top</a></div>    
+</div>
+<!--END Copyright Section-->
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+<!--Tool Tip-->
+<script type="text/javascript">
+$(document).ready(function() {
+    //Tooltips
+    $(".tip_trigger").hover(function(){
+        tip = $(this).find('.tip');
+        tip.show(); //Show tooltip
+    }, function() {
+        tip.hide(); //Hide tooltip
+    }).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coodrinates
+        var mousey = e.pageY + 20; //Get Y coordinates
+        var tipWidth = tip.width(); //Find width of tooltip
+        var tipHeight = tip.height(); //Find height of tooltip
+
+        //Distance of element from the right edge of viewport
+        var tipVisX = $(window).width() - (mousex + tipWidth);
+        //Distance of element from the bottom of viewport
+        var tipVisY = $(window).height() - (mousey + tipHeight);
+
+        //Absolute position the tooltip according to mouse position
+        tip.css({  top: mousey, left: mousex });
+    });
+});
+</script>
+
+<!--Go To Top-->
+<script type='text/javascript'>
+    $(function() {
+        $.fn.scrollToTop = function() {
+            $(this).hide().removeAttr("href");
+            if ($(window).scrollTop() != "0") {
+                $(this).fadeIn("slow")
+            }
+            var scrollDiv = $(this); 
+            $(window).scroll(function() {
+                if ($(window).scrollTop() == "0") {
+                    $(scrollDiv).fadeOut("slow")
+                } else {
+                    $(scrollDiv).fadeIn("slow")
+                }
+            });
+            $(this).click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, "slow")
+            })
+        }
+    });
+    $(function() {
+        $("#w2b-StoTop").scrollToTop();
+    });
+</script>
+
+<!--Tabs-->
+<script type="text/javascript" src="js/tabs.js"></script>
+    
+</body></html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SelectCut Media</title>
+<link href='http://fonts.googleapis.com/css?family=Oswald&amp;v2' rel='stylesheet' type='text/css'></link>
+<link href="http://fonts.googleapis.com/css?family=Arimo:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"></link>
+<style type="text/css">@import url("css/reset.css");</style>
+<style type="text/css">@import url("css/grid.css");</style>
+<style type="text/css">@import url("css/styles.css");</style>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--Sliding Boxes-->
+		<style type="text/css">@import url("css/sliding_boxes.css");</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+				//Vertical Sliding
+				$('.boxgrid.slidedown').hover(function(){
+					$(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:600});
+				});
+				//Horizontal Sliding
+				$('.boxgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'325px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:600});
+				});
+				//Diagnal Sliding
+				$('.boxgrid.thecombo').hover(function(){
+					$(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:600});
+				});
+				//Partial Sliding (Only show some of background)
+				$('.boxgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({top:'90px'},{queue:false,duration:600});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:600});
+				});
+				//Full Caption Sliding (Hidden to Visible)
+				$('.boxgrid.captionfull').hover(function(){
+					$(".cover", this).stop().animate({top:'120px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'200px'},{queue:false,duration:300});
+				});
+				//Caption Sliding (Partially Hidden to Visible)
+				$('.boxgrid.caption').hover(function(){
+					$(".cover", this).stop().animate({top:'120px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:300});
+				});
+				//Small Horizontal Sliding
+				$('.boxsmgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'70px'},{queue:false,duration:400});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:500});
+				});
+				//Small Partial Sliding (Only show some of background)
+				$('.boxsmgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({left:'70px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:300});
+				});		
+				
+				
+			});
+		</script>
+<style type="text/css">@import url("css/prettyPhoto.css");</style>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script type='text/javascript' language='Javascript' src='js/jquery.quicksand.js'></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!--New Menu-->
+<link rel="stylesheet" type="text/css" media="screen" href="css/menu.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body>
+
+
+
+<!--Main Bar-->
+<div class="navbar">
+<div class="container_12">
+	<!--Logo-->
+	<div class="grid_2 logo"><a href="index.html"><img src="images/logo_blank.png" alt=""/></a></div>
+	<!--End Logo-->
+	<!--Main Nav--> 
+	<div class="grid_10">  
+
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">Home</a>
+
+					</li>
+                    <li><a href="about.html">About</a>
+
+					</li>
+                    <li><a href="services.html">Services</a>
+
+					</li>
+					<li class="current"><a href="gallery8.html">Portfolio</a>
+                  
+                    </li>
+					<li><a href=""></a>
+
+                    </li>                    
+                    <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+	</div>
+    <!--End Main Nav--> 
+</div>
+</div>
+<!--End Main Bar-->
+
+<div class="clearnospacing"></div>
+
+<div class="container_12">
+	<div class="grid_12">
+        <div class="clear"></div>
+    		<div class="pagetitle1">PORTFOLIO<span> | EXAMPLES OF OUR WORK</span></div>
+        <div class="clearnospacing"></div>   
+     	<div class="divider"></div>  
+    </div>
+</div>    
+
+<div class="pagecontents">
+    <div class="container_12">
+    
+                <div class="grid_12">
+                <!--Gallery-->
+                    <ul class="splitter portfolio-main filter">
+                        <li>
+                            <ul>
+                                <li class="segment-1 selected-1 active"><a href="#" class="all">All Categories</a></li>
+                                <li class="segment-0"><a href="#" class="corporate">Corporate</a></li>
+                                <li class="segment-2"><a href="#" class="demonstration">Demonstration and Training</a></li>
+                                <li class="segment-3"><a href="#" class="promotional">Promotional</a></li>
+                                <li class="segment-4"><a href="#" class="film">Film and Trailers</a></li> 
+                                <li class="segment-5"><a href="#" class="documentary">Documentaries</a></li>                                <li class="segment-6"><a href="#" class="psa">PSAs</a></li>                                <li class="segment-7"><a href="#" class="visual_efx">Visual Effects and Graphics</a></li>                                 
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="clear"></div>
+
+                    <ul id="list" class="image-grid threecol portfolio-content">
+                    
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="1" data-type="corporate">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113468422?width=800&amp;height=450" rel="prettyPhoto" title="One World One Goal">
+                            <img src="images/boxes/box_One_World_One_Goal.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>One World One Goal</h4>
+                            <p>One World One Goal is a corporate video produced for the World Bank Group.</p>
+                        </li>
+                        <!--End Gallery Thumbnail-->
+
+                       
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="2" data-type="promotional">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113462402?width=800&amp;height=450" rel="prettyPhoto" title="Transforming How You Work">
+                            <img src="images/boxes/box_ITS_Expo_Promotional_Video.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Transforming How You Work</h4>
+                            <p>Transforming How You work is a promotional video that was produced for the World Bank Group 2014 ITS Expo.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->                       
+                        
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="3" data-type="documentary">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113463319?width=800&amp;height=450" rel="prettyPhoto" title="Communicating Through Time">
+                            <img src="images/boxes/box_Communicating_Through_Time.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Communicating Through Time</h4>
+                            <p>This Mini Documentary was produced to show how different age groups have communicated through time.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->                        
+                        
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="4" data-type="film">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113458006?width=800&amp;height=450" rel="prettyPhoto" title="Donum Trailer #1">
+                            <img src="images/boxes/box_donum_trailer_1.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Donum Trailer #1</h4>
+                            <p>This was the first trailer produced for the Short Film Donum.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->                        
+                        
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="5" data-type="film">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113459595?width=800&amp;height=450" rel="prettyPhoto" title="Donum Trailer #2">
+                            <img src="images/boxes/box_donum_trailer_2.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Donum Trailer #2</h4>
+                            <p>This was the second trailer produced for the Short Film Donum.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->                        
+                        
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="6" data-type="visual_efx">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113462014?width=800&amp;height=450" rel="prettyPhoto" title="Indiegogo Video Campaign Pitch">
+                            <img src="images/boxes/box_indiegogo_video_campaign.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Indiegogo Video Campaign Pitch</h4>
+                            <p>This animated Video Campaign Pitch was produced to raise funds for the production Short Film Donum.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->                                            
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="7" data-type="promotional">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113499139?width=800&amp;height=450" rel="prettyPhoto" title="Blackberry Sunsetting Promo">
+                            <img src="images/boxes/box_Blackberry_Sunsetting_Video.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Blackberry Sunsetting Promo</h4>
+                            <p>This promotional video was produced to promote and build awareness for the sunsetting of the Blackberry device.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+                        
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="8" data-type="promotional">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113499261?width=800&amp;height=450" rel="prettyPhoto" title="BOX Promo">
+                            <img src="images/boxes/box_BOX_Promo.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>BOX Promo</h4>
+                            <p>This promotional video was produced to promote the rollout of the Box Online Storage System to staff.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->                        
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="9" data-type="promotional">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113499332?width=800&amp;height=450" rel="prettyPhoto" title="Lotus Notes Sunsetting Promo">
+                            <img src="images/boxes/box_LotusNotes_Sunsetting.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Lotus Notes Sunsetting Promo</h4>
+                            <p>This promotional video was produced to say goodbye to the Lotus Notes email system.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+
+
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="10" data-type="demonstration">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113499408?width=800&amp;height=450" rel="prettyPhoto" title="Outlook Private Tag">
+                            <img src="images/boxes/box_Outlook_Private_Tag.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Outlook Private Tag</h4>
+                            <p>This Demonstrational video was produced to educate staff on how to create Private Tags in Outlook.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="11" data-type="documentary">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113499526?width=800&amp;height=450" rel="prettyPhoto" title="Voices of Change">
+                            <img src="images/boxes/box_voices_of_change_mini_doc.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Voices of Change</h4>
+                            <p>This Mini Documentary was produced to capture the voices of people in developing countries experiencing postive change.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+
+
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="12" data-type="psa">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113499862?width=800&amp;height=450" rel="prettyPhoto" title="World Bank Group PSA #4">
+                            <img src="images/boxes/box_WBG_PSA_4.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>World Bank Group PSA #4</h4>
+                            <p></p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+
+
+
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="13" data-type="psa">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113499798?width=800&amp;height=450" rel="prettyPhoto" title="World Bank Group PSA #3">
+                            <img src="images/boxes/box_WBG_PSA_3.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>World Bank Group PSA #3</h4>
+                            <p></p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+                        
+
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="14" data-type="psa">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113499733?width=800&amp;height=450" rel="prettyPhoto" title="World Bank Group PSA #2">
+                            <img src="images/boxes/box_WBG_PSA_2.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>World Bank Group PSA #2</h4>
+                            <p>.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+                        
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="15" data-type="psa">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113499619?width=800&amp;height=450" rel="prettyPhoto" title="World Bank Group PSA #1">
+                            <img src="images/boxes/box_WBG_PSA_1.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>World Bank Group PSA #1</h4>
+                            <p></p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="16" data-type="promotional">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113499917?width=800&amp;height=450" rel="prettyPhoto" title="Webex Promo">
+                            <img src="images/boxes/box_Webex.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Webex Promo</h4>
+                            <p>This Promotional video was produced to promote the rollout of the new Webex system.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->                                                
+
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="17" data-type="demonstration">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113514676?width=800&amp;height=450" rel="prettyPhoto" title="iPhone WBGApps and Helpful Tips">
+                            <img src="images/boxes/box_iPhone_How-To.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>iPhone WBGApps and Helpful Tips</h4>
+                            <p>This Promotional video was produced to demonstrate the use of WBG Apps on the iPhone.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+                        
+                        
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="18" data-type="visual_efx">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/113514784?width=800&amp;height=450" rel="prettyPhoto" title="Scream Queen Contest">
+                            <img src="images/boxes/box_ScreamQueen.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Scream Queen Contest</h4>
+                            <p>This animated video was produced to promote the Scream Queen Contest for the Short Film Donum.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->                        
+
+
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="19" data-type="documentary">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/123339343?width=800&amp;height=450" rel="prettyPhoto" title="Description of the National Nutrition Program">
+                            <img src="images/boxes/box_Djibouti_Description of the National Nutrition Program.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Description of the National Nutrition Program (Djibouti Series)</h4>
+                            <p>This video was produced to assist with the improvement of the health and survival rate of young pregnant women and infants.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+                        
+                        
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="19" data-type="documentary">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/123339340?width=800&amp;height=450" rel="prettyPhoto" title="Getting Inspired to Build Capacity">
+                            <img src="images/boxes/box_Djibouti_Getting_Inspired_to_Build_Capacity.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Getting Inspired to Build Capacity (Djibouti Series)</h4>
+                            <p>This video was produced to assist with the improvement of the health and survival rate of young pregnant women and infants.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->                                 
+                                           
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="19" data-type="documentary">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/123339341?width=800&amp;height=450" rel="prettyPhoto" title="Filling the Gaps to Fight Malnutrition">
+                            <img src="images/boxes/box_Djibouti_Filling_the Gaps_to_Fight_Malnutrition.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Filling the Gaps to Fight Malnutrition (Djibouti Series)</h4>
+                            <p>This video was produced to assist with the improvement of the health and survival rate of young pregnant women and infants.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+
+
+                    	<!--Gallery Thumbnail-->                        
+                        <li data-id="19" data-type="documentary">
+                        	<div class="portshadow300">
+                            <div class="hover"><span><a href="http://vimeo.com/123334707?width=800&amp;height=450" rel="prettyPhoto" title="Safety Nets">
+                            <img src="images/boxes/box_SafetyNets.jpg" alt="" class="frame" width="280" height="240"/></a></span></div>
+                            </div>
+                            <h4>Safety Nets</h4>
+                            <p>This video was produced to show how the Safety Nets project improves living conditions in developing countries.</p>
+
+                        </li>
+                        <!--End Gallery Thumbnail-->
+
+                                                
+                    </ul>
+                <!--End Gallery-->    
+				</div>  
+			</div>
+</div>
+<!--End Subpage Content-->
+
+<div class="cleargallery"></div>
+
+
+
+<!--Copyright Section-->
+<div class="bottombar">
+    <div class="container_12">
+    
+        <div class="grid_4">
+        	<div class="copyright">&copy; SelectCut Media. All Rights Reserved.</div>
+            <div class="clearnospacing"></div>
+            <div class="subtext"></div>
+        </div>
+        
+        <div class="grid_8">
+        <div class="alignright">
+            <div class="crumb_navigation">
+            	<ul>
+		    		<li><a href="index.html">Home</a></li>
+		    		<li><a href="about.html">About</a></li>
+		   			<li><a href="services.html">Services</a></li>
+                 	<li><a href="gallery8.html">Portfolio</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+			</div>
+        </div>
+        </div>
+        
+    </div>
+    <div class="topbutton"><a href="#" id='w2b-StoTop'>Top</a></div>    
+</div>
+<!--END Copyright Section-->
+
+<script type="text/javascript" src="js/custom_filter.js"></script>
+
+
+<!--Tool Tip-->
+<script type="text/javascript">
+$(document).ready(function() {
+    //Tooltips
+    $(".tip_trigger").hover(function(){
+        tip = $(this).find('.tip');
+        tip.show(); //Show tooltip
+    }, function() {
+        tip.hide(); //Hide tooltip
+    }).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coodrinates
+        var mousey = e.pageY + 20; //Get Y coordinates
+        var tipWidth = tip.width(); //Find width of tooltip
+        var tipHeight = tip.height(); //Find height of tooltip
+
+        //Distance of element from the right edge of viewport
+        var tipVisX = $(window).width() - (mousex + tipWidth);
+        //Distance of element from the bottom of viewport
+        var tipVisY = $(window).height() - (mousey + tipHeight);
+
+        //Absolute position the tooltip according to mouse position
+        tip.css({  top: mousey, left: mousex });
+    });
+});
+</script>
+
+<!--Go To Top-->
+<script type='text/javascript'>
+    $(function() {
+        $.fn.scrollToTop = function() {
+            $(this).hide().removeAttr("href");
+            if ($(window).scrollTop() != "0") {
+                $(this).fadeIn("slow")
+            }
+            var scrollDiv = $(this);
+            $(window).scroll(function() {
+                if ($(window).scrollTop() == "0") {
+                    $(scrollDiv).fadeOut("slow")
+                } else {
+                    $(scrollDiv).fadeIn("slow")
+                }
+            });
+            $(this).click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, "slow")
+            })
+        }
+    });
+    $(function() {
+        $("#w2b-StoTop").scrollToTop();
+    });
+</script>
+
+</body></html>
